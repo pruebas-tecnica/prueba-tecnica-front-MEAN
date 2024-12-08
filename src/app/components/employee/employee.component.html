@@ -1,1 +1,19 @@
 <p>employee works!</p>
+
+<div class="p-4">
+    <h2 class="text-2xl font-bold mb-4 text-Green-400">Empleados</h2>
+    <div *ngIf="employee.length; else noemployee" class="bg-white shadow-md rounded-lg">
+      <ul class="divide-y divide-gray-200">
+        <li
+          *ngFor="let employee of employee"
+          class="px-4 py-3 flex justify-between items-center hover:bg-gray-50 transition"
+        >
+          <span class="font-medium text-gray-800">{{ employee.codigo }}</span>
+          <span class="text-gray-600">{{ employee.nombre }}</span>
+        </li>
+      </ul>
+    </div>
+    <ng-template #noEmployee>
+      <p class="text-gray-500 italic">No hay empleado disponible.</p>
+    </ng-template>
+  </div>

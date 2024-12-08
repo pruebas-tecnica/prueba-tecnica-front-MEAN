@@ -1,25 +1,26 @@
-<nav class="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white shadow-lg">
-    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-      <div class="text-2xl font-bold tracking-wide">
-        <a routerLink="/" class="hover:text-gray-200 transition-colors">Prueba 2 Frontend</a>
-      </div>
-      <div class="flex space-x-6">
-        <a
-          routerLink="/"
-          routerLinkActive="font-bold border-b-2 border-white"
-          [routerLinkActiveOptions]="{ exact: true }"
-          class="text-lg hover:text-gray-200 transition-all"
-        >
-          Home
-        </a>
-        <a
-          routerLink="/list"
-          routerLinkActive="font-bold border-b-2 border-white"
-          class="text-lg hover:text-gray-200 transition-all"
-        >
-          List
-        </a>
-      </div>
+<nav class="bg-gradient-to-r from-green-500 via-green-600 to-green-700 text-white shadow-lg">
+  <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <div class="text-2xl font-bold tracking-wide">
+      <a routerLink="/" class="hover:text-gray-200 transition-colors">Base de usuarios</a>
     </div>
-  </nav>
-  
+    <div class="flex space-x-6">
+      <a
+        routerLink="/"
+        routerLinkActive="font-bold border-b-2 border-white"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="text-lg text-green-500 font-bold hover:text-green-600 transition-all bg-gray-200 px-4 py-2 rounded-[15px] shadow-md hover:bg-gray-300"
+      >
+        Inicio
+      </a>
+      <a
+        routerLink="/list"
+        routerLinkActive="font-bold border-b-2 border-white"
+        class="text-lg text-green-500 font-bold hover:text-green-600 transition-all bg-gray-200 px-4 py-2 rounded-[15px] shadow-md hover:bg-gray-300"
+      >
+        Listado
+      </a>
+      
+      
+    </div>
+  </div>
+</nav>
